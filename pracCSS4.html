@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Yael Vazquez Gonzalez</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: serif;
+        }
+        form{
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid green;
+            background-color: rgb(199, 196, 196);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"]{
+            background-color: rgb(244, 153, 244);
+            color: rgb(1, 33, 65);
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Vacunas</h1>
+    <form action="pracCSS5.html" method="post" enctype="multipart/form-data">
+
+        <label for="nombre">Nombre del perico</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="Tipo">Tipo de Perico</label>
+        <select id="Tipo" name="Tipo">
+            <option value="monje">Periquito monje</option>
+            <option value="cotorrita de sol">Cotorrita del Sol</option>
+        </select>
+
+        <label for="vacunado">¿Esta Vacunado?</label>
+        <input type="checkbox" id="vacunado" name="vacunado"> Si
+        <input type="checkbox" id="vacunado" name="vacunado"> No
+        <br><br>
+        <label>Genero:</label>
+        <input type="radio" id="Macho" name="genero" value="macho">Macho
+        <input type="radio" id="Hembra" name="genero" value="macho">Hembra
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br>
+    <a href="pracCSS3.html">Anterior</a>
+    <a href="pracCSS5.html">Siguiente</a>
+    
+</body>
+</html>
